@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.iot">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="MissingClass">
+
+        <TextView
+            android:id="@+id/textViewCreatedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Time"/>
+        <TextView
+            android:id="@+id/textViewTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Temperature"/>
+
+        <TextView
+            android:id="@+id/textViewHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Humidity"/>
+
+        <TextView
+            android:id="@+id/textCarbonMonoxide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Carbon Monoxide (CO)"/>
+
+        <TextView
+            android:id="@+id/textViewRain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Rain"/>
+
+        <TextView
+            android:id="@+id/textWaterLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="WaterLevel"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webViewTemperature"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="200sp" />
+
+            <WebView
+                android:id="@+id/webViewHumidity"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="200sp" />
+
+            <WebView
+                android:id="@+id/webViewCarbonMonoxide"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="200sp" />
+
+            <WebView
+                android:id="@+id/webViewRain"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="200sp" />
+
+            <WebView
+                android:id="@+id/webWaterLevel"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="200sp" />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonNavigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to API Activity"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
